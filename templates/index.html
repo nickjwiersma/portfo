@@ -5,7 +5,8 @@
 		<title>Nick Wiersma</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="./static/assets/css/main.css" />
+		<link rel="stylesheet" href="./static/assets/css/main.css" />		
+		<link rel="icon" href="./static/images/favicon.ico" type="image/x-icon">
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
 		<script src="https://kit.fontawesome.com/e0c1577df0.js" crossorigin="anonymous"></script>
 		<noscript><link rel="stylesheet" href="./static/assets/css/noscript.css" /></noscript>
@@ -25,8 +26,7 @@
 							<li><a href="#one">About me</a></li>
 							<li><a href="#two">My skills</a></li>
 							<li><a href="#three">What we do at <br> WOW Legal Experience</a></li>
-							<li><a href="#four">Portfolio</a></li>
-							<li><a href="#five">Get in touch</a></li>
+							<li><a href="#four">Get in touch</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -135,7 +135,7 @@
 
 
 				<!--My skills-->
-					<section id="two" class="wrapper style3 fade-up">
+					<section id="two" class="wrapper style3 fade-up" style="background-color: #FF6666;">
 						<div class="inner">
 							<h2>My skills</h2>
 							<p>
@@ -346,66 +346,13 @@
 								</p>
 							</section>
 						</div>
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
 					</div>
 				</section>
 
 
 
-
-				<!-- Portfolio -->
-				<section id="four" class="wrapper style2 spotlights">
-					<section>
-						<a href="#" class="image"><img src="./static/images/pic01.jpg" alt="" data-position="center center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Sed ipsum dolor</h2>
-								<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-								<ul class="actions">
-									<li><a href="generic.html" class="button">Learn more</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section>
-						<a href="#" class="image"><img src="./static/images/pic02.jpg" alt="" data-position="top center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Feugiat consequat</h2>
-								<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-								<ul class="actions">
-									<li><a href="generic.html" class="button">Learn more</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section>
-						<a href="#" class="image"><img src="./static/images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Ultricies aliquam</h2>
-								<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-								<ul class="actions">
-									<li><a href="generic.html" class="button">Learn more</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-				</section>
-
-
-
-
-
-
-
-
-
-
 				<!-- Contact me-->
-					<section id="five" class="wrapper style1 fade-up">
+					<section id="four" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2 class="icon-heading"><i class="fa-solid fa-message fa-bounce fa-xl" style="color: #ffffff;"></i>Contact me</h2>
 							<p>
@@ -417,12 +364,23 @@
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="name" id="name" placeholder="Required" required/>
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<input type="text" name="email" id="email" placeholder="Required" required/>
 											</div>
+
+											<div class="field">
+												<select for="category" name="category" id="category">
+													<option value="">- Category -</option>
+													<option value="job_offer">Job offer</option>
+													<option value="collaboration_request">Collaboration request</option>
+													<option value="feedback">Feedback</option>
+													<option value="Other">Other</option>
+												</select>
+											</div>
+
 											<div class="field">
 												<label for="message">Message</label>
 												<textarea name="message" id="message" rows="5"></textarea>
@@ -436,29 +394,31 @@
 								<section>
 									<ul class="contact">
 										<li>
-											<h3 class="icon-heading"><i class="fa-solid fa-map fa-beat fa-xl" style="color: #bfbfbf;"></i>Address:</h3>
+											<h3 class="icon-heading"><i class="fa-solid fa-map fa-beat fa-xl" style="color: #ffffff;"></i>Address:</h3>
 											<span>
 												Based in Madrid, Spain. <br>
 												Worldwide communication available.
 											</span>
 										</li>
 										<li>
-											<h3 class="icon-heading"><i class="fa-solid fa-envelope fa-beat fa-xl" style="color: #bfbfbf;"></i>Email:</h3>
+											<h3 class="icon-heading"><i class="fa-solid fa-envelope fa-beat fa-xl" style="color: #ffffff;"></i>Email:</h3>
 											<a href="mailto:nick@wowlegalx.biz">nick@wowlegalx.biz</a>
 											<a href="mailto:nickjwiersma@gmail.com">nickjwiersma@gmail.com</a>
 
 										</li>
 										<li>
-											<h3 class="icon-heading"><i class="fa-solid fa-phone fa-beat fa-xl" style="color: #bfbfbf;"></i>Phone:</h3>
+											<h3 class="icon-heading"><i class="fa-solid fa-phone fa-beat fa-xl" style="color: #ffffff;"></i>Phone:</h3>
 											<span><a href="tel:+31611817241">(+31) 6 1181 7241</a></span>
 										</li>
 										<li>
 											<h3 class="icon-heading"><i class="fa-solid fa-user-tie fa-beat fa-xl" style="color: #ffffff;"></i>Social</h3>
 											<ul class="icons">
-												<li><a href="https://wowlegalx.biz/"><i class="fa-solid fa-globe fa-xl" style="color: #bfbfbf;"></i></i></i><span class="label"></span></a></li>
-												<li><a href="https://discordapp.com/users/Wierie#4978"><i class="fa-brands fa-discord fa-xl" style="color: #bfbfbf;"></i><span class="label"></span></a></li>
-												<li><a href="https://instagram.com/wowlegalx?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram fa-xl" style="color: #bfbfbf;"></i><span class="label"></span></a></li>
-												<li><a href="https://www.linkedin.com/in/nick-wiersma-6b2a20225"> <i class="fa-brands fa-linkedin-in fa-xl" style="color: #bfbfbf;"></a></i><span class="label"></span></li>
+												<li><a href="https://wowlegalx.biz/"><i class="fa-solid fa-globe fa-shake fa-xl" style="color: #ffffff;"></i></i></i><span class="label"></span></a></li>
+												<li><a href="https://discordapp.com/users/Wierie#4978"><i class="fa-brands fa-discord fa-shake fa-xl" style="color: #ffffff;"></i><span class="label"></span></a></li>
+												<li><a href="https://instagram.com/wowlegalx?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram fa-shake fa-xl" style="color: #ffffff;"></i><span class="label"></span></a></li>
+												<li><a href="https://www.linkedin.com/in/nick-wiersma-6b2a20225"> <i class="fa-brands fa-linkedin-in fa-shake fa-xl" style="color: #ffffff;"></a></i><span class="label"></span></li>
+												<li><a href="https://github.com/nickjwiersma"> <i class="fa-brands fa-github fa-shake fa-xl" style="color: #ffffff;"></a></i><span class="label"></span></li>
+
 											</ul>
 										</li>
 									</ul>
@@ -470,9 +430,9 @@
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
+			<footer id="footer" class="wrapper style1-alt" >
+				<div class="inner" style="height: 50px;">
+					<ul class="menu" >
 						<li>&copy; Nick Wiersma. All rights reserved.</li>
 					</ul>
 				</div>
